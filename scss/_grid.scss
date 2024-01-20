@@ -10,7 +10,7 @@ $grid-breakpoints: (
     sm: 576px,
 );
 $container-max-widths: (
-    sm: 100%,
+    // sm: 100%,
     md: 540px,
     lg: 720px,
     xl: 960px,
@@ -39,7 +39,7 @@ $gutters: (
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    // @extend %gutter-padding;
+    @extend %gutter-padding;
 }
 
 .container {

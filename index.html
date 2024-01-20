@@ -37,30 +37,77 @@
                 </div>
 
                 <!-- Navigation bar -->
-                <nav class="navbar">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link navbar__link--action">Home</a>
+                <nav class="navbar d-md-none">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="#!" class="navbar-link navbar-link-action">Home</a>
                         </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Products</a>
+                        <li class="navbar-item">
+                            <a href="#!" class="navbar-link">Products</a>
                         </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Guidlines</a>
+                        <li class="navbar-item">
+                            <a href="#!" class="navbar-link">Guidlines</a>
                         </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Review</a>
+                        <li class="navbar-item">
+                            <a href="#!" class="navbar-link">Review</a>
                         </li>
                     </ul>
                 </nav>
 
                 <!-- Action -->
                 <div class="act">
-                    <button class="act__cta btn">Sign In</button>
+                    <button class="act-btn btn">Sign In</button>
                 </div>
+
+                <!-- Bars -->
+                <label for="menu-mobile-checkbox" class="bars d-none d-md-block">
+                    <img src="./assets/icons/bars.svg" alt="">
+                </label>
             </div>
         </div>
     </header>
+
+    <!-- Menu mobile -->
+    <div class="menu-mobile d-none d-md-block">
+
+        <input type="checkbox" hidden class="menu-mobile-input" id="menu-mobile-checkbox">
+
+        <!-- Overlay -->
+        <label for="menu-mobile-checkbox" class="menu-overlay"></label>
+
+        <!-- Drawer -->
+        <div class="drawer">
+
+            <label for="menu-mobile-checkbox" class="drawer-close">
+                <img src="./assets/icons/close.svg" alt="">
+            </label>
+
+            <!-- Logo -->
+            <div class="drawer-logo">
+                <a href="#">
+                    <img src="./assets/icons/logo.svg" alt="Logo" class="logo-icon">
+                </a>
+            </div>
+
+            <!-- Navigation bar -->
+            <nav class="drawer-navbar">
+                <ul class="drawer-navbar-list">
+                    <li class="drawer-navbar-item">
+                        <a href="#!" class="drawer-navbar-link">Home</a>
+                    </li>
+                    <li class="drawer-navbar-item">
+                        <a href="#!" class="drawer-navbar-link">Products</a>
+                    </li>
+                    <li class="drawer-navbar-item">
+                        <a href="#!" class="drawer-navbar-link">Guidlines</a>
+                    </li>
+                    <li class="drawer-navbar-item">
+                        <a href="#!" class="drawer-navbar-link">Review</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
     <main>
         <!-- Hero section -->
@@ -82,7 +129,8 @@
                             </strong>
                             Way More Easier Than Ever
                         </h1>
-                        <p class="desc">The online collaborative management platform to bring more efficiency and
+                        <p class="desc d-sm-none">The online collaborative management platform to bring more efficiency
+                            and
                             performace
                         </p>
                         <div class="hero-act">
@@ -105,7 +153,7 @@
 
         <!-- Service section -->
         <section class="service">
-            <div class="container">
+            <div class="service-container">
                 <div class="service-body">
                     <!-- List -->
                     <div class="service-list">
@@ -141,10 +189,9 @@
                                 <p class="desc">Sed rhoncus sit sed tellus donec lorem lectus nunc, ornare</p>
                             </div>
                         </div>
-
-                        <img class="service-line-1" src="./assets/icons/service-4.svg" alt="">
-                        <img class="service-line-2" src="./assets/icons/service-4.svg" alt="">
                     </div>
+                    <img class="service-line-1" src="./assets/icons/service-4.svg" alt="">
+                    <img class="service-line-2" src="./assets/icons/service-4.svg" alt="">
                 </div>
             </div>
         </section>
@@ -153,7 +200,7 @@
         <section class="task">
             <div class="task-container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 col-xl-12">
                         <!-- Left -->
                         <section class="task-left">
                             <h2 class="heading-media">Okay, <strong>Let’s</strong> see D’task in numbers</h2>
@@ -165,7 +212,7 @@
                             </p>
 
                             <div class="task-box">
-                                <div class="task-dots">
+                                <div class="task-dots d-md-none">
                                     <div class="task-dot"></div>
                                     <div class="task-dot"></div>
                                     <div class="task-dot"></div>
@@ -190,49 +237,49 @@
                     </div>
 
                     <!-- Right -->
-                    <div class="col-6">
+                    <div class="col-6 col-xl-12">
                         <div class="task-right">
                             <figure class="task-images">
                                 <img src="./assets/icons/task.svg" alt="">
                                 <img src="./assets/icons/task-2.svg" alt="">
                                 <img src="./assets/icons/task-3.svg" alt="">
                                 <img src="./assets/icons/task-4.svg" alt="">
+                                <!-- Inner 1 -->
+                                <div class="task-inner">
+                                    <span>Online Support</span>
+                                    <div class="task-inner-box">
+                                        <img src="./assets/icons/task-5.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- Inner 2 -->
+                                <div class="task-inner">
+                                    <span>Exercitation</span>
+                                    <div class="task-inner-box">
+                                        <img src="./assets/icons/task-6.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- Inner 3 -->
+                                <div class="task-inner">
+                                    <div class="task-inner-box">
+                                        <img src="./assets/icons/task-5.svg" alt="">
+                                    </div>
+                                    <span>D’ task</span>
+                                    <div class="task-wrap">
+                                        <img src="./assets/images/task-1.png" alt="">
+                                        <img src="./assets/images/task-2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- Inner 4 -->
+                                <div class="task-inner">
+                                    <span>Design</span>
+                                    <div class="task-inner-box">
+                                        <img src="./assets/icons/task-7.svg" alt="">
+                                    </div>
+                                </div>
                             </figure>
-                            <!-- Inner 1 -->
-                            <div class="task-inner">
-                                <span>Online Support</span>
-                                <div>
-                                    <img src="./assets/icons/task-5.svg" alt="">
-                                </div>
-                            </div>
-
-                            <!-- Inner 2 -->
-                            <div class="task-inner">
-                                <span>Exercitation</span>
-                                <div>
-                                    <img src="./assets/icons/task-6.svg" alt="">
-                                </div>
-                            </div>
-
-                            <!-- Inner 3 -->
-                            <div class="task-inner">
-                                <div>
-                                    <img src="./assets/icons/task-5.svg" alt="">
-                                </div>
-                                <span>D’ task</span>
-                                <div class="task-wrap">
-                                    <img src="./assets/images/task-1.png" alt="">
-                                    <img src="./assets/images/task-2.png" alt="">
-                                </div>
-                            </div>
-
-                            <!-- Inner 4 -->
-                            <div class="task-inner">
-                                <span>Design</span>
-                                <div>
-                                    <img src="./assets/icons/task-7.svg" alt="">
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -242,9 +289,9 @@
         <!-- Feature section -->
         <section class="feature">
             <div class="feature-container">
-                <div class="row gx-0">
-                    <!-- Left -->
-                    <div class="col-6">
+                <div class="row">
+                    <div class="col-6 col-xl-12">
+                        <!-- Left -->
                         <div class="feature-left">
                             <div class="feature-box">
                                 <img src="./assets/images/feature-2.png" alt="">
@@ -281,55 +328,64 @@
                                     <span>12 am</span>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
 
-                    <!-- Right -->
-                    <div class="col-6">
+                    <div class="col-6 col-xl-12">
+                        <!-- Right -->
                         <div class="feature-right">
                             <h2 class="heading-media">Features to help your <strong>team succeed</strong></h2>
 
                             <div>
                                 <!-- List 1 -->
                                 <div class="feature-list">
-                                    <!-- Item 1 -->
-                                    <div class="feature-item">
-                                        <img src="./assets/icons/feature-2.svg" alt="">
-                                        <div class="feature-item-body">
-                                            <span>Choose a view</span>
-                                            <p class="desc">Nullam dignssim mauris, dictumst quisque.</p>
+                                    <div class="row g-2 g-md-3">
+                                        <!-- Item 1 -->
+                                        <div class="col-6 col-md-12">
+                                            <div class="feature-item">
+                                                <img src="./assets/icons/feature-2.svg" alt="">
+                                                <div class="feature-item-body">
+                                                    <span>Choose a view</span>
+                                                    <p class="desc">Nullam dignssim mauris, dictumst quisque.</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <!-- Item 2 -->
-                                    <div class="feature-item">
-                                        <img src="./assets/icons/feature-3.svg" alt="">
-                                        <div class="feature-item-body">
-                                            <span>Meet your new butler</span>
-                                            <p class="desc">Nullam dignssim mauris, dictumst quisque.</p>
+                                        <!-- Item 2 -->
+                                        <div class="col-6 col-md-12">
+                                            <div class="feature-item">
+                                                <img src="./assets/icons/feature-3.svg" alt="">
+                                                <div class="feature-item-body">
+                                                    <span>Meet your new butler</span>
+                                                    <p class="desc">Nullam dignssim mauris, dictumst quisque.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- List 2 -->
                                 <div class="feature-list">
-                                    <!-- Item 1 -->
-                                    <div class="feature-item">
-                                        <img src="./assets/icons/feature-4.svg" alt="">
-                                        <div class="feature-item-body">
-                                            <span>Dive into the details</span>
-                                            <p class="desc">Nullam dignssim mauris, dictumst quisque.</p>
+                                    <div class="row g-2 g-md-3">
+                                        <!-- Item 1 -->
+                                        <div class="col-6 col-md-12">
+                                            <div class="feature-item">
+                                                <img src="./assets/icons/feature-4.svg" alt="">
+                                                <div class="feature-item-body">
+                                                    <span>Dive into the details</span>
+                                                    <p class="desc">Nullam dignssim mauris, dictumst quisque.</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <!-- Item 2 -->
-                                    <div class="feature-item">
-                                        <img src="./assets/icons/feature-5.svg" alt="">
-                                        <div class="feature-item-body">
-                                            <span>Power up</span>
-                                            <p class="desc">Nullam dignssim mauris, dictumst quisque.</p>
+                                        <!-- Item 2 -->
+                                        <div class="col-6 col-md-12">
+                                            <div class="feature-item">
+                                                <img src="./assets/icons/feature-5.svg" alt="">
+                                                <div class="feature-item-body">
+                                                    <span>Power up</span>
+                                                    <p class="desc">Nullam dignssim mauris, dictumst quisque.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -342,7 +398,7 @@
 
         <!-- About section -->
         <section class="about">
-            <div class="container">
+            <div class="about-container">
                 <!-- Body -->
                 <div class="about-body">
                     <h2 class="heading-media">Integrated <strong>designed</strong> for product teams</h2>
@@ -382,10 +438,8 @@
                     <div class="about-content">
                         <!-- Inner 1 -->
                         <div class="about-inner-1">
-                            <div class="about-top">
-                                <img src="./assets/icons/about-6.svg" alt="">
-                                <h3 class="heading-small">Dashboard Desktop Design Idea</h3>
-                            </div>
+                            <img src="./assets/icons/about-6.svg" alt="">
+                            <h3 class="heading-small">Dashboard Desktop Design Idea</h3>
                             <div class="about-list-group">
                                 <!-- Group 1 -->
                                 <div class="about-group">
@@ -406,8 +460,7 @@
                                 <!-- Group 2 -->
                                 <div class="about-group">
                                     <div class="about-wrap">
-                                        <img class="about-check about-check-action" src="./assets/icons/about-14.svg"
-                                            alt="">
+                                        <img src="./assets/icons/about-14.svg" alt="">
                                         <div class="about-box">
                                             <span>HI-Fidelity</span>
                                             <span>#design</span>
@@ -438,7 +491,7 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class="about-between">
                             <!-- Inner 2 -->
                             <div class="about-inner-2">
                                 <img src="./assets/icons/about-6.svg" alt="">
@@ -465,7 +518,7 @@
                             <div class="about-inner-3">
                                 <div class="about-inner-3-top">
                                     <img src="./assets/icons/about-6.svg" alt="">
-                                    <h3 class="heading-small" class="heading-small">D’task</h3>
+                                    <h3 class="heading-small">D’task</h3>
                                 </div>
 
                                 <img src="./assets/icons/about-9.svg" alt="">
@@ -490,10 +543,8 @@
 
                         <!-- Inner 4 -->
                         <div class="about-inner-4">
-                            <div class="about-top">
-                                <img src="./assets/icons/about-6.svg" alt="">
-                                <h3 class="heading-small" class="heading-small">Team</h3>
-                            </div>
+                            <img src="./assets/icons/about-6.svg" alt="">
+                            <h3 class="heading-small">Team</h3>
                             <!--List -->
                             <div class="about-inner-4-list">
                                 <!-- Item 1 -->
@@ -537,12 +588,12 @@
 
         <!-- Feature-2 section -->
         <section class="feature-2">
-            <div class="container">
+            <div class="feature-2-container">
                 <!-- Top -->
                 <div class="feature-2-top">
                     <h2 class="heading-media">From the <strong>big picture</strong> to every tiny detail, we got you
                         covered.</h2>
-                    <button class="btn">Explore Now</button>
+                    <button class="btn d-lg-none">Explore Now</button>
                 </div>
                 <!-- body -->
                 <div class="feature-2-body">
@@ -579,18 +630,21 @@
                             <img src="./assets/images/feature-2-3.png" alt="">
                         </figure>
                     </div>
+
+                    <button class="btn d-none d-lg-block">Explore Now</button>
+
                 </div>
             </div>
         </section>
 
         <!-- Blog section -->
         <section class="blog">
-            <div class="container">
+            <div class="blog-container">
                 <h2 class="heading-media"><strong>Refreshing</strong> news for developers and desigers</h2>
                 <!-- List -->
                 <div class="blog-list">
-                    <div class="row">
-                        <div class="col-4">
+                    <div class="row g-3">
+                        <div class="col-4 col-lg-6 col-sm-12">
                             <!-- Item 1 -->
                             <article class="blog-item">
                                 <!-- Top -->
@@ -612,7 +666,7 @@
                             </article>
                         </div>
                         <!-- Item 2 -->
-                        <div class="col-4">
+                        <div class="col-4 col-lg-6 col-sm-12">
                             <article class="blog-item">
                                 <!-- Top -->
                                 <div class="blog-top">
@@ -632,7 +686,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 col-lg-6 col-sm-12">
                             <!-- Item 3 -->
                             <article class="blog-item">
                                 <!-- Top -->
@@ -661,11 +715,13 @@
         <!-- Testimonial section -->
         <div class="testimonial">
             <div class="testimonial-container">
+
+                <h2 class="heading-media"><b>test</b>monials</h2>
                 <!-- List -->
                 <div class="testimonial-list">
                     <div class="row g-3">
                         <!-- Item 1 -->
-                        <div class="col-4 ">
+                        <div class="col-4 col-lg-6 offset-lg-3 col-md-12 offset-md-0">
                             <div class="testimonial-item">
                                 <img src="./assets/icons/testimonial-1.svg" alt="">
                                 <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -686,7 +742,7 @@
                             </div>
                         </div>
                         <!-- Item 2 -->
-                        <div class="col-4 ">
+                        <div class="col-4 d-lg-none">
                             <div class="testimonial-item">
                                 <img src="./assets/icons/testimonial-1.svg" alt="">
                                 <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -707,7 +763,7 @@
                             </div>
                         </div>
                         <!-- Item 3 -->
-                        <div class="col-4 ">
+                        <div class="col-4 d-lg-none">
                             <div class="testimonial-item">
                                 <img src="./assets/icons/testimonial-1.svg" alt="">
                                 <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -727,11 +783,14 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="testimonial-next">
+                    </div>
+                    <div class="testimonial-next">
+                        <button>
                             <img src="./assets/icons/testimonial-3.svg" alt="">
+                        </button>
+                        <button>
                             <img src="./assets/icons/testimonial-3.svg" alt="">
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -740,7 +799,7 @@
 
     <!-- Footer layout -->
     <footer class="footer">
-        <div class="container">
+        <div class="footer-container">
             <!-- Top -->
             <div class="footer-top">
                 <!-- Logo -->
