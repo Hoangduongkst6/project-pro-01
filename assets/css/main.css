@@ -1274,7 +1274,6 @@ strong {
   background: #131517;
   height: 40px;
   line-height: 150%;
-  transition: 0.3s;
   background: linear-gradient(90deg, #EB9204 -33.14%, #83E868 116.38%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1484,11 +1483,22 @@ strong {
   background: rgba(255, 255, 255, 0.1);
   z-index: -1;
 }
+@media (max-width: 991.98px) {
+  .hero-content h1 strong::before {
+    inset: -2px;
+  }
+}
 .hero-content h1 strong .circle-1 {
   border-radius: 50% 50% 0 50%;
   background: #AE8FF9;
   top: -9px;
   left: -14px;
+}
+@media (max-width: 991.98px) {
+  .hero-content h1 strong .circle-1 {
+    top: -11px;
+    left: -12px;
+  }
 }
 .hero-content h1 strong .circle-2 {
   border-radius: 50% 0 50% 50%;
@@ -1496,17 +1506,35 @@ strong {
   bottom: -13px;
   left: -14px;
 }
+@media (max-width: 991.98px) {
+  .hero-content h1 strong .circle-2 {
+    bottom: -11px;
+    left: -12px;
+  }
+}
 .hero-content h1 strong .circle-3 {
   border-radius: 50% 50% 50% 0;
   background: #EF8F00;
   top: -9px;
   right: -18px;
 }
+@media (max-width: 991.98px) {
+  .hero-content h1 strong .circle-3 {
+    top: -11px;
+    right: -12px;
+  }
+}
 .hero-content h1 strong .circle-4 {
   border-radius: 0 50% 50% 50%;
   background: #0CCE84;
   bottom: -13px;
   right: -18px;
+}
+@media (max-width: 991.98px) {
+  .hero-content h1 strong .circle-4 {
+    bottom: -11px;
+    right: -12px;
+  }
 }
 .hero-content p {
   width: 447px;
@@ -2880,7 +2908,6 @@ strong {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition: color 0.3s;
 }
 .feature-2-top button:hover {
   background: linear-gradient(90deg, #EB9204 -33.14%, #83E868 116.38%);

@@ -137,7 +137,6 @@ $display-values: block, flex, grid, none;
         background: #131517;
         height: 40px;
         line-height: 150%;
-        transition: .3s;
 
         background: linear-gradient(90deg, #EB9204 -33.14%, #83E868 116.38%);
         background-clip: text;
@@ -365,6 +364,10 @@ $display-values: block, flex, grid, none;
                     inset: 0 -8px -4px -4px;
                     background: rgba(255, 255, 255, 0.1);
                     z-index: -1;
+
+                    @include screen(lg) {
+                        inset: -2px;
+                    }
                 }
 
                 .circle-1 {
@@ -374,6 +377,11 @@ $display-values: block, flex, grid, none;
                     left: -14px;
 
                     @extend %circle;
+
+                    @include screen(lg) {
+                        top: -11px;
+                        left: -12px;
+                    }
                 }
 
                 .circle-2 {
@@ -383,6 +391,11 @@ $display-values: block, flex, grid, none;
                     left: -14px;
 
                     @extend %circle;
+
+                    @include screen(lg) {
+                        bottom: -11px;
+                        left: -12px;
+                    }
                 }
 
                 .circle-3 {
@@ -392,6 +405,11 @@ $display-values: block, flex, grid, none;
                     right: -18px;
 
                     @extend %circle;
+
+                    @include screen(lg) {
+                        top: -11px;
+                        right: -12px;
+                    }
                 }
 
                 .circle-4 {
@@ -401,6 +419,11 @@ $display-values: block, flex, grid, none;
                     right: -18px;
 
                     @extend %circle;
+
+                    @include screen(lg) {
+                        bottom: -11px;
+                        right: -12px;
+                    }
                 }
             }
         }
@@ -1914,12 +1937,11 @@ $display-values: block, flex, grid, none;
             font-size: 1.8rem;
             font-weight: 600;
             line-height: 100%;
-            
+
             background: linear-gradient(90deg, #EB9204 -33.14%, #83E868 116.38%);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            transition: color .3s;
 
             &:hover {
                 background: linear-gradient(90deg, #EB9204 -33.14%, #83E868 116.38%);
